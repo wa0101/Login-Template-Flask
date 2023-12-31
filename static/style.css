@@ -1,3 +1,5 @@
+
+/* the css is very bad here lol , so u can just update the classes of tailwind most of this css is useless*/
 @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
 
 * {
@@ -10,10 +12,10 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-color: #1a202c; /* Tailwind dark theme background color */
-    color: #cbd5e0; /* Tailwind dark theme text color */
+    background-color: #1a202c;
+    color: #cbd5e0; 
 
-    /* Custom scrollbar styles */
+    /* Custom scrollbar styles u can change it C: */
     scrollbar-width: thin;
     scrollbar-color: #4a5568 #1a202c;
 }
