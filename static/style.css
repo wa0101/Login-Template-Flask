@@ -1,0 +1,61 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #1a202c; /* Tailwind dark theme background color */
+    color: #cbd5e0; /* Tailwind dark theme text color */
+
+    /* Custom scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: #4a5568 #1a202c;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* Tailwind color for scrollbar thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1a202c; /* Tailwind dark theme background color for scrollbar track */
+}
+
+.container {
+    @apply flex justify-center items-center h-screen bg-gray-900;
+}
+
+.card {
+    @apply relative w-72 h-96 bg-white shadow-lg rounded-md overflow-hidden transform scale-90 transition-transform duration-500 ease-in-out;
+
+    &:hover {
+        @apply scale-100;
+    }
+}
+
+.card .imgBx {
+    @apply relative w-full h-52 z-10 overflow-hidden;
+}
+
+.card .imgBx img {
+    @apply absolute top-0 left-0 w-full h-full object-cover transition duration-500 ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        @apply flex-col;
+    }
+
+    .card {
+        @apply w-full mb-4;
+    }
+}

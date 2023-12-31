@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="flex items-center justify-center h-screen bg-gray-900">
+        <div class="bg-white shadow-lg p-8 rounded-md max-w-md w-full">
+            <h2 class="text-3xl font-semibold mb-6 text-gray-800">Sign Up Successful</h2>
+            <p class="text-green-500">Congratulations, {{ username }}! Your account has been created successfully</p>
+            <p class="text-gray-600 mt-4">You can now <a href="{{ url_for('login') }}" class="text-blue-500 hover:underline">log in</a>!</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="flex items-center justify-center h-screen bg-gray-900">
+        <div class="bg-white shadow-lg p-8 rounded-md max-w-md w-full">
+            <h2 class="text-3xl font-semibold mb-6 text-gray-800">Sign Up</h2>
+            {% if error %}
+                <div class="bg-red-500 text-white p-3 mb-4">
+                    {{ error }}
+                </div>
+            {% endif %}
+            <form action="/signup" method="post" class="space-y-4">
+                <div class="relative">
+                    <label for="username" class="block text-sm font-medium text-gray-500">Username</label>
+                    <input type="text" id="username" name="username" class="form-input block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 text-gray-700">
+                    <i class="fas fa-user absolute top-3 right-4 text-gray-500"></i>
+                </div>
+                <div class="relative">
+                    <label for="password" class="block text-sm font-medium text-gray-500">Password</label>
+                    <input type="password" id="password" name="password" class="form-input block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 text-gray-700">
+                    <i class="fas fa-lock absolute top-3 right-4 text-gray-500"></i>
+                    <i class="fas fa-eye absolute top-3 right-10 text-gray-500 cursor-pointer" onclick="togglePasswordVisibility('password', this)"></i>
+                </div>
+                <div class="relative">
+                    <label for="confirm_password" class="block text-sm font-medium text-gray-500">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" class="form-input block w-full px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 text-gray-700">
+                    <i class="fas fa-lock absolute top-3 right-4 text-gray-500"></i>
+                    <i class="fas fa-eye absolute top-3 right-10 text-gray-500 cursor-pointer" onclick="togglePasswordVisibility('confirm_password', this)"></i>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md transition duration-300 hover:bg-green-600">Sign Up</button>
+            </form>
+            <p class="text-gray-600 mt-4">Already have an account? <a href="{{ url_for('login') }}" class="text-blue-500 hover:underline">Login</a></p>
+        </div>
+    </div>
+    <script>
+        function togglePasswordVisibility(fieldId, eyeIcon) {
+            const field = document.getElementById(fieldId);
+            if (field && eyeIcon) {
+                const fieldType = field.getAttribute('type');
+                if (fieldType === 'password') {
+                    field.setAttribute('type', 'text');
+                    eyeIcon.classList.add('fa-eye-slash');
+                } else {
+                    field.setAttribute('type', 'password');
+                    eyeIcon.classList.remove('fa-eye-slash');
+                }
+            }
+        }
+    </script>
+{% endblock %}
