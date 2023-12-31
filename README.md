@@ -144,7 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <!-- Preview -->
 ## Preview 🚀
 
-Take a glimpse of the sleek and user-friendly login template. The following screenshots showcase the login and signup pages, along with alerts for incorrect password and password mismatch.
+Take a glimpse of the sleek and user-friendly login template. The following screenshots showcase the login, signup, and dashboard pages, along with alerts for incorrect password and password mismatch.
 
 ### Login Page:
 
@@ -162,6 +162,10 @@ Take a glimpse of the sleek and user-friendly login template. The following scre
 
 ![Password Mismatch Alert](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/d21cb890-a052-4fa1-b697-322761ab91ad)
 
+### Dashboard Page:
+
+![Dashboard Page](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/60f3a2a2-de7a-4ba5-bbe5-379a92d9d6fe)
+
 ---
 
 ### Explore More:
@@ -169,8 +173,5 @@ Take a glimpse of the sleek and user-friendly login template. The following scre
 Feel free to explore the features, security measures, and customization options in this Flask login template. If you encounter any issues or have suggestions for improvements, don't hesitate to contribute or open an issue.
 
 Your feedback is valuable! 🌟
-
-
-
 
 
