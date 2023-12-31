@@ -140,3 +140,37 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Flask: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 - Tailwind CSS: [https://tailwindcss.com/](https://tailwindcss.com/)
 
+
+<!-- Preview -->
+## Preview 🚀
+
+Take a glimpse of the sleek and user-friendly login template. The following screenshots showcase the login and signup pages, along with alerts for incorrect password and password mismatch.
+
+### Login Page:
+
+![Login Page](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/6f38df61-b4a7-4f8f-a4bc-bc62c1d3d4a4)
+
+### Invalid Password Alert:
+
+![Invalid Password Alert](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/1ec24d84-b5cc-4168-95f5-131209d14aeb)
+
+### Signup Page:
+
+![Signup Page](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/72208a5f-0d53-466e-8abb-079d9dbca47f)
+
+### Password Mismatch Alert:
+
+![Password Mismatch Alert](https://github.com/ichliebees/Login-Template-Flask/assets/138697155/d21cb890-a052-4fa1-b697-322761ab91ad)
+
+---
+
+### Explore More:
+
+Feel free to explore the features, security measures, and customization options in this Flask login template. If you encounter any issues or have suggestions for improvements, don't hesitate to contribute or open an issue.
+
+Your feedback is valuable! 🌟
+
+
+
+
+
