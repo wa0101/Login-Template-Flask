@@ -14,7 +14,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        with open('users.json', 'r') as file:
+        with open('./users.json', 'r') as file: # it's based on the users.json path in ur file so change it if u have different one
             users = json.load(file)
 
         if username in users and check_password_hash(users[username]['password'], password):
@@ -40,8 +40,8 @@ def signup():
 
             users[username] = {'password': hashed_password}
 
-            with open('users.json', 'w') as file:
-                json.dump(users, file)
+            with open('./users.json', 'w') as file:
+                json.dump(users, file) # it's based on the users.json path in ur file so change it if u have different one
 
             return render_template('signup_success.html', username=username)
 
